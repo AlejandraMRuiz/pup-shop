@@ -32,7 +32,7 @@ ul {
 
 .btn {
   color: #fff;
-  background: #db6435;
+  background: #FF5C00;
   cursor: pointer;
   padding: 10px;
   border: none;
@@ -42,8 +42,9 @@ ul {
 
 /* HERO SECTION */
 .hero {
-  background: url('./images/png/dog-hero.png') no-repeat center bottom;
-  background-color: #b6e3fc;
+  /* background: url('./images/png/dog-hero.png') no-repeat center bottom; */
+  /* "center bottom" isn't actually moving it as far to the bottom as I need it to... and centering moves dog too far up */
+  background: url('./images/png/dog-hero.png') no-repeat;
 
   /* height: 600px;
   background-size: 300px;
@@ -63,7 +64,6 @@ ul {
 /* I just moved this out into "section" above so that might fuck with the SIGN UP btn, let's see. */
 /* Totally fucked it up. Putting it back in a chunk at the very end of this ".hero" bit */
 
-    position: relative;
     z-index: 1;
     margin: 0 auto;   
     max-width: 900px;
@@ -77,6 +77,9 @@ ul {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+/* okay, that fixed things. Now we need to move the puppy down so there's space between the top of his head and the
+top of the page and so the bottom of his image is trimmed off (hopefully, doubtfully, but hopefully) */
 
 }
 
